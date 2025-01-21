@@ -96,7 +96,20 @@
 
   /* media-query for small device*/
   @media screen and (max-width: 576px) {
-    .navbar> .logo-continer, .logo-title, .nav-links, .nav-btn{
+    .navbar{
+      flex-direction: column;
+    }
+    .banner-container{
+      flex-direction: column-reverse;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+
+
+
+    /* .navbar> .logo-continer, .logo-title, .nav-links, .nav-btn{
         display: none;
     }
     .logo-img{
@@ -115,12 +128,8 @@
       justify-items: center;
       text-align: center;
       flex-direction: column-reverse;
-    }
-    .responsive-line{
-      display: inline-block;
-      position: absolute;
-      width: 100%;
-      border: 1px solid black;
-    }
+    } */
+  
+    
   }
   

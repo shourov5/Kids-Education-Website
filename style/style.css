@@ -50,7 +50,7 @@
     align-items: center;
   }
   .nav-links-container{
-    width: 450px;
+    width: 387px;
     margin: 0px 180px;
     padding: 10px 0;
     justify-content: center;
@@ -94,12 +94,8 @@
   display: none;
 }
 
-
-
-
-
   /* media-query for small device*/
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 950px) {
     .navbar> .logo-continer, .logo-title, .nav-links, .nav-btn{
         display: none;
     }
@@ -109,14 +105,13 @@
       height: 50px;
     }
     .responsive-image{
-      padding-right: 5px;
+      padding-right: 10px;
       width: 40px;
       height: 40px;
       display: block;
     }
     .banner-container, .btn-primary{
-      margin: 10px;
-      margin-top: 40px;
+      margin-top: 50px;
       justify-items: center;
       text-align: center;
       flex-direction: column-reverse;
@@ -125,10 +120,7 @@
       display: inline-block;
       position: absolute;
       width: 100%;
-      margin-bottom: 10px;
-      color: orange;
-      border: 1px solid;
+      border: 1px solid black;
     }
-    
   }
   

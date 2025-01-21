@@ -23,6 +23,27 @@
   .text-color-violate{
     color: rgb(93, 88, 239);
   }
+  .card-gradient1{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  }
+  .card-gradient2{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  }
+  .card-gradient3{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  }
   .btn-primary{
     width: 197px;
     height: 50px;
@@ -90,8 +111,65 @@
 #banner-section .btn-primary{
   background-color: black;
 }
-.responsive-line{
+.line{
   display: none;
+}
+/* curriculum section */
+#our-curriculum{
+  background-image: url(../assets/bg.png);
+}
+.our-title{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.card-container{
+  margin: 50px auto;
+  max-width: 1200px;
+  height: 482px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;  
+}
+.cardbox{
+  width: 368px;
+  height: 450px;
+  text-align: center;
+  align-items: center;
+}
+.cardbox .card-img{
+  margin-top: 50px;
+}
+.cardbox .card-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.cardbox .card-description{
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(128, 128, 128);
+}
+.cardbox .read-more{
+  text-decoration: none;
+}
+.arrow-continer{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+ .arrow-continer .arrow{
+  font-size: 3rem;
+  height: 60px;
+  width: 60px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 50px;
+  color:rgb(254, 254, 254);
+  background-color: orange;
 }
 
   /* media-query for small device*/
@@ -99,9 +177,17 @@
     .logo-title, .nav-links-container, .nav-btn {
       display: none;
     }
+    .line{
+      height: 100%;
+      width: 2px;
+      background-color: orange;
+      border: none;
+      margin: 0;
+    }
     .logo-img, .responsive-image{
-      display: flex;
-      margin: 0 180px;
+      display: block;
+      margin: 0 150px;
+      padding: 0px 10px;
       width: 50px;
       height: 50px;
     }
@@ -110,32 +196,22 @@
       justify-items: center;
       align-items: center;
       text-align: center;
+      margin-top: 20px;
+      padding: 0px 10px;
       gap: 20px;
     }
-
-
-
-    /* .navbar> .logo-continer, .logo-title, .nav-links, .nav-btn{
-        display: none;
-    }
-    .logo-img{
+    .our-title{
       display: block;
-      width: 50px;
-      height: 50px;
-    }
-    .responsive-image{
-      padding-right: 10px;
-      width: 40px;
-      height: 40px;
-      display: block;
-    }
-    .banner-container, .btn-primary{
-      margin-top: 50px;
-      justify-items: center;
+      font-size: 1.5rem;
       text-align: center;
-      flex-direction: column-reverse;
-    } */
-  
-    
+      margin-top: 50px;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .arrow-continer{
+      display: none;
+    }
   }
   

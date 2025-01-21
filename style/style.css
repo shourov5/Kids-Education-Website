@@ -111,9 +111,9 @@
 #banner-section .btn-primary{
   background-color: black;
 }
-.line{
+/* .line{
   display: none;
-}
+} */
 /* curriculum section */
 #our-curriculum{
   background-image: url(../assets/bg.png);
@@ -171,19 +171,28 @@
   color:rgb(254, 254, 254);
   background-color: orange;
 }
+/* story section */
+
+
+
+
+
+
+
+
 
   /* media-query for small device*/
-  @media screen and (max-width: 576px) {
+  @media screen and (min-width: 576px) and (max-width: 976px) {
     .logo-title, .nav-links-container, .nav-btn {
       display: none;
     }
-    .line{
+    /* .line{
       height: 100%;
       width: 2px;
       background-color: orange;
       border: none;
       margin: 0;
-    }
+    } */
     .logo-img, .responsive-image{
       display: block;
       margin: 0 150px;

@@ -182,7 +182,7 @@
 
 
   /* media-query for small device*/
-  @media screen and (max-width: 932px) {
+  @media screen and (max-width: 576px) {
     .logo-title, .nav-links-container, .nav-btn {
       display: none;
     }

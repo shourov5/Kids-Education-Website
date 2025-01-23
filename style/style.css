@@ -59,6 +59,9 @@
     font-weight: 600;
   }
   /* navbar-style*/
+  .hr{
+    display: none;
+  }
   .logo-title{
     margin-left: 10px;
     font-size: 32px;
@@ -68,7 +71,7 @@
   }
   .navbar{
     margin: 0 auto;
-    max-width: 1200px;
+    width: 100%;
     padding: 20px 0;
     justify-content: center;
     align-items: center;
@@ -181,78 +184,188 @@
   font-size: 2.2rem;
   font-weight: 700;
 }
-.a-card{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-.story-card-container{
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
 .card .big-img{
   width: 540.27px;
   height: 630.52px;
   border-radius: 16px;
   background: rgb(255, 255, 255);
 }
-
-
-
-
-
-
-
-
-
+.big-img button{
+  margin-left: 20px;
+  width: 174.51px;
+  height: 38.35px;
+  transform: translateY(-23px);
+  border: none;
+  border-radius: 45px;
+  background: rgb(149, 178, 38);
+}
+.big-img h3{
+  margin-left: 1.5rem;
+  font-size: 24px;
+  font-weight: 700;
+}
+.big-img p{
+  margin-left: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(102, 102, 102);
+}
+.story-card-container{
+  max-width: 1200px;
+  height: 635px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.a-card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.card{
+  margin-left: 15px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 254);
+}
+.story-img{
+  border-radius: 16px 16px 0 0;
+}
+.a-card button{
+  margin-left: 15px;
+  width: 174.51px;
+  height: 38.35px;
+  transform: translateY(-23px);
+  border: none;
+  border-radius: 45px;
+  background: rgb(149, 178, 38);
+}
+.a-card p{
+  margin-left: 15px;
+  font-size: .9rem;
+  font-weight: 700;
+}
 .view{
   display: flex;
   justify-content: center;
+  padding: 10px 0;
 }
 .view .btn-primary{
   background-color: black;
 }
+/* footer */
+.footer{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: rgb(1, 172, 253);;
+}
+.footer-container{
+  width: 1200px;
+}
+.footer1{
+  justify-content: flex-start;
+  gap: 40px;
+  width: 400px;
+}
+.footer2{
+  width: 400px;
+  justify-items: center;
+  text-align: center;
+  flex-direction: column;
+  
+}
+.footer3{
+  width: 400px;
+  justify-content: flex-end;
+  justify-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
   /* media-query for small device*/
   @media screen and (max-width: 576px) {
     .logo-title, .nav-links-container, .nav-btn{
       display: none;
     }
-    .logo-img, .responsive-image{
+    .hr{
       display: block;
+    }
+    .logo-img, .responsive-image{
+      display: flex;
+      justify-content: space-between;
       margin: 0 150px;
-      padding: 0px 10px;
-      width: 50px;
+      width: 100%;
       height: 50px;
     }
     .banner-container{
       width: 100%;
+      height: 1500px;
       flex-direction: column-reverse;
       justify-items: center;
       align-items: center;
       text-align: center;
-      margin-top: 20px;
-      padding: 0px 10px;
       gap: 20px;
+    }
+    .banner-img{
+      width: 100%;
+      height: 400px;
+      
+    }
+    .banner-btn{
+      margin-top: 10px;
     }
     /* curriculam */
     #our-curriculum{
-      height: 1600px;
+      width: 100%;
+      height: 1500px;
       margin-bottom: 20px;
     }
     .our-title{
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 700;
       width: 100%;
     }
     .card-container{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      width: 100%;
     }
-    .arrow-continer, .big-img{
+    .card-container .card{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .arrow-continer{
       display: none;
     }
+    /* story */
+    .story-container{
+      width: 100%;
+    }
+    .big-img{
+      display: none;
+    }
+    .story-heading{
+      text-align: center;
+      width: 100%;
+    }
+    .a-card .story-img{
+      width: 100%;
+    }
+    .a-card .card{
+      width: 100%;
+      margin: 0;
+    }
+    .footer-container, .footer2, .footer3{
+      height: 500px;
+      flex-direction: column;
+      justify-items: start;
+      align-items: start;
+      text-align: start;
+      gap: 5px;
+    }
     
-
   }

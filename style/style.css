@@ -173,6 +173,9 @@
   color:rgb(254, 254, 254);
   background-color: orange;
 }
+.arrow-continer .arrow:hover{
+  background-color: rgb(210, 105, 30);
+}
 /* story section */
 #Story{
   background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
@@ -274,7 +277,6 @@
   justify-items: center;
   text-align: center;
   flex-direction: column;
-  
 }
 .footer3{
   width: 400px;

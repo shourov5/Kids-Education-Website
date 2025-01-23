@@ -197,7 +197,7 @@
   transform: translateY(-23px);
   border: none;
   border-radius: 45px;
-  background: rgb(149, 178, 38);
+  background-color: rgb(5, 212, 223);
 }
 .big-img h3{
   margin-left: 1.5rem;
@@ -289,6 +289,10 @@
   @media screen and (max-width: 576px) {
     .logo-title, .nav-links-container, .nav-btn{
       display: none;
+    }
+    *{
+      margin: 0;
+      padding: 0;
     }
     .hr{
       display: block;
